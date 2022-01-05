@@ -363,13 +363,14 @@ h2{
         margin-bottom: 30px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .policy-box::before{
         content:"" ;
         width: 16px;
-        height: 16px;
-        border: 1px solid #212121;
-        border-radius: 2px;
+        height: 15px;
+        border: 2px solid #212121;
+        border-radius: 4px;
         margin-right: 7px;
     }
     .policy-checkbox{
@@ -388,13 +389,14 @@ h2{
         background-image: url(../img/policy.svg);
         background-repeat: no-repeat;
         background-position: center;
-    }
-    .policy-checkbox:focus + .policy-box::before{
-        outline: 1px solid #2196F3;
         border: none;
     }
+    /* .policy-checkbox:focus + .policy-box::before{
+        outline: 2px solid #2196F3;
+        border: none;
+    } */
     .policy-checkbox:hover + .policy-box::before{
-        outline: 1px solid #2196F3;
+        outline: 2px solid #2196F3;
         border: none;
     }
     .policy-box a{
@@ -517,11 +519,12 @@ h2{
         text-transform: uppercase;
         width: 370px;
         height: 70px;
-        transform: translateY(-100%);
-        display: -webkit-inline-box;
-
+        display: flex;
         color: #FFFFFF;
         background: rgba(47, 48, 58, 0.8);
+        position: absolute;
+        top: 1401px;
+
     }
     
     /* Стилизироваие блока структуры команды */
@@ -662,6 +665,9 @@ h2{
         padding-bottom: 60px;
         
     }
+    .footer-socil{
+        margin-right: 62px;
+    }
 
     .column{
         display: flex;
@@ -764,6 +770,7 @@ h2{
         border-radius: 4px;
         background-color: #2F303A;
         padding-left: 16px;
+        color: #FFFFFF;
     }
     .footer-input-name{
         color: #FFFFFF;
